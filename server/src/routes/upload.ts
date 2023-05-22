@@ -15,8 +15,6 @@ export async function uploadRoutes(app: FastifyInstance) {
       },
     })
 
-    console.log(upload)
-
     if (!upload) {
       return reply.status(400).send()
     }
