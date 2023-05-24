@@ -3,6 +3,8 @@ import { z } from 'zod'
 import { prisma } from '../lib/prisma'
 
 export async function memoriesRoutes(app: FastifyInstance) {
+  const port = process.env.PORT || 3333
+
   app.addHook('preHandler', async (request) => {
     await request.jwtVerify()
   })
