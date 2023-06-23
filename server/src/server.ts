@@ -33,7 +33,7 @@ app.register(memoriesRoutes)
 
 app
   .listen({
-    host: '0.0.0.0',
+    host: 'nlw-spacetime-back-end.vercel.app',
     port: process.env.PORT ? Number(process.env.PORT) : 3333,
   })
   .then(() => {
